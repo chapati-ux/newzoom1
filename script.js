@@ -127,3 +127,12 @@ menu.addEventListener("click",function(){
     //     ease: "linear",
     // })
 })
+
+
+// ^ footer text
+// gsap.to(".fzoom h1",{
+//     y:100,
+//     duration:2,
+//     ease: "linear",
+//     repeat:-1,
+// })
