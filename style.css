@@ -557,12 +557,19 @@ line-height: 1rem;
 
   .step h3 {
     font-size: 1rem;
+
   }
 
   .step p {
     font-size: 0.8125rem;
   }
+
 }
+.n1 a:hover {
+  transform: translateY(-1rem);
+}
+
+
 
 .funnel-container {
   display: flex;
@@ -591,6 +598,7 @@ line-height: 1rem;
   background-color: transparent;
   border-top: none;
 }
+
 
 .stage-1 {
   width: 65.125rem;
