@@ -1098,6 +1098,22 @@ line-height: 1rem;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
+.form-container {
+
+  display: flex;
+  width: 32.5625rem;
+  height: 40.6685rem;
+  max-width: 93.03569rem;
+  padding: 2.40344rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.62025rem;
+  flex-shrink: 0; 
+  border-radius: 1.16294rem;
+border: 1.24px solid #A6C1EE;
+background: linear-gradient(154deg, #8FCEFB -5.46%, #E2F2FE 71.37%, #FFF 97.91%);
+}
+
 /* Show them on hover */
 .stage-4:hover .GH,
 .stage-4:hover .BP,
