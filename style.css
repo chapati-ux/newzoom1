@@ -58,6 +58,13 @@ nav img {
     display: none;
   }
 }
+@media (width<390px) {
+  nav img {
+    height: 3rem;
+    width: 5rem;
+    object-fit: cover;
+  }
+}
 @media (width<450px) {
 }
 
@@ -161,6 +168,31 @@ nav img {
     width: 3rem;
   }
 }
+@media (width<390px) {
+  #hometext {
+    top: 15%;
+    height: 12rem;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: red; */
+  }
+  #hometext h1 {
+    /* display: none; */
+    font-size: 3rem;
+    /* line-height: 0.5rem; */
+  }
+  #hometext .line {
+    /* display: none; */
+    font-size: 3rem;
+  }
+  #hometext img {
+    /* display: none; */
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+}
 .rating{
   position: absolute;
   top: 90%;
@@ -183,7 +215,12 @@ height: 1.1875rem;
 }
 @media (width<450px) {
   .rating{
-    
+    top: 55%;
+  }
+}
+@media (width<390px) {
+  .rating{
+    top: 50%;
   }
 }
 /** form */
@@ -225,6 +262,7 @@ height: 1.1875rem;
   width: 100%;
   margin-top: 2rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .f1,
@@ -321,15 +359,24 @@ height: 1.1875rem;
     display: none;
   }
   .menu2{
+    height: 100vh;
     width: 100%;
     left: 0;
+    padding: 1rem;
   }
   .menu2 a{
-    font-size: 4rem;
+    font-size: 3rem;
     /* line-height: 7rem; */
     padding: 1rem;
   }
 }
+@media (width<390px){
+  .menu2 a{
+    font-size: 3.5rem;
+  }
+}
+
+
 .amtext {
   height: auto;
   width: 400%;
@@ -355,6 +402,15 @@ height: 1.1875rem;
     padding: 0 0.5rem;
     display: flex;
     align-items: center;
+    /* background-color: green; */
+  }
+}
+@media (width<390px) {
+  .amtext {
+    height: 6rem;
+  }
+  .amtext h1 {
+    font-size: 3.5rem;
     /* background-color: green; */
   }
 }
@@ -397,11 +453,12 @@ height: 1.1875rem;
 @media (width<450px) {
   #htext{
     top: 60%;
-    left: 10%;
-    font-size: 0.8125rem;
+    left: 5%;
+    font-size: 1.5rem;
   }
   .playcon {
-    left: 10%;
+    top: 75%;
+    left: 5%;
     width: 18.1875rem;
     height: 12.1875rem;
   }
@@ -424,6 +481,131 @@ height: 1.1875rem;
     /* background-color: red; */
   }
 }
+@media (width<390px) {
+  #htext{
+    top: 55%;
+    left: 3%;
+    font-size: 1.2rem;
+    /* background-color: red; */
+  }
+  .playcon {
+    top: 70%;
+    left: 5%;
+    width: 15.1875rem;
+    height: 10.1875rem;
+  }
+}
+
+
+/* ^about us */
+.about {
+  height: 110vh;
+  width: 100%;
+  background-color: white;
+  padding: 1rem 6rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+.about .abcon {
+  height: auto;
+  width: 100%;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+.about .ab {
+  height: auto;
+  width: 50%;
+}
+.about p {
+  font-size: 1rem;
+}
+.about h1 {
+  font-size: 3.75rem;
+  font-weight: 800;
+}
+#ab1 .abcircle {
+  width: 11.875rem;
+  height: 11.875rem;
+  border-radius: 50%;
+  background-color: #46B9EA;
+}
+#ab1 img {
+  border-radius: 5%;
+}
+#ab1 {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+#ab1 .abimg1 {
+  height: 100%;
+  width: 25rem;
+}
+#ab1 .abimg2 {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  transform: translateY(-100%);
+  width: 18.125rem;
+  height: 19.75rem;
+}
+#ab2 .ab2p p {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+#ab2 h1 {
+  font-size: 3.125rem;
+  font-weight: 800;
+  line-height: 0rem;
+}
+#ab2 .ab2p2 p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+#ab2 .ab2p2 span {
+  color: orange;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 0rem 2rem; /* Reduce padding on smaller screens */
+  }
+  .about .ab {
+    width: 100%; /* Make elements stack on smaller screens */
+  }
+  #ab1 .abimg1 {
+    width: 100%; /* Adjust image width for smaller screens */
+  }
+  .about h1 {
+    font-size: 2.5rem; /* Adjust font sizes for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about .abcon{
+    gap: 1rem;
+  }
+  .about h1 {
+    font-size: 2rem; /* Further adjust font sizes for very small screens */
+  }
+  .about p {
+    font-size: 0.875rem; /* Reduce paragraph font size for very small screens */
+  }
+  #ab1 .abimg2 {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transform: translateY(-100%);
+    width: 15.125rem;
+    height: 19.75rem;
+  }
+}
+
+
 
 /* abhi work */
 
@@ -664,7 +846,9 @@ height: 1.1875rem;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-
+.step :hover{
+  color: rebeccapurple;
+}
 .stage-1:hover .seo,
 .stage-1:hover .sem,
 .stage-1:hover .market,
@@ -1201,6 +1385,7 @@ background: linear-gradient(154deg, #8FCEFB -5.46%, #E2F2FE 71.37%, #FFF 97.91%)
   height: 100%;
   width: 100%;
   border-radius: 1.4375rem;
+  cursor: pointer;
 }
 #s1text{
   margin-top: 4rem;
@@ -1354,14 +1539,19 @@ background: linear-gradient(154deg, #8FCEFB -5.46%, #E2F2FE 71.37%, #FFF 97.91%)
 }
 @media (width<450px) {
   .footer {
-    height: 100vh;
+    height: auto;
   }
-  #fbar{
+  .footer #fbar{
     height: 50vh;
+    width: 100%;
     flex-direction: column;
     background-color: red;
+    visibility: hidden;
   }
   .footer .fzoom h1 {
+    top: 80%;
     font-size: 3rem;
+    text-align: center;
+    /* background-color: red; */
   }
 }
