@@ -246,6 +246,7 @@ margin-top: 1rem;
     font-weight: 400;
     line-height: normal;
     padding: 1rem;
+    /* background-color: #0BF; */
     
 }
 .contseo p {
@@ -254,6 +255,8 @@ margin-top: 1rem;
     font-size: 1.1rem;
 margin-top: 2rem;
 }
+
+
 .contApp{
   /* background-color: #6749ff; */
   height: 15rem;
@@ -469,4 +472,303 @@ margin-top: 2rem;
     font-family: Lalezar;
     font-size: 1.1rem;
 margin-top: 2rem;
+} 
+ /*=========================== mobile view==================================  */
+ @media screen and (max-width: 480px) {
+  .form-container {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    top: 1rem;
+    padding: 1rem;
+    position: relative;
+    position: absolute;
+    top:23rem ;
+  }
+
+  .form-container h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .input-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .input-row input {
+    height: 1rem;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #email1,
+  #tel,
+  #sel,
+  #area {
+    height: 1rem;
+    width: 100%;
+    
+  }
+
+  #b2 {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contseo {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contseo h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contseo p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contApp {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contApp h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contApp p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contbrand {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contbrand h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contbrand p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .conte-commerce {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .conte-commerce h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .conte-commerce p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contdigital{
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contdigital h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contdigital p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contmarket {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contmarket h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contmarket p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contb2b {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contb2b h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contb2b p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contemail {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contemail h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contemail p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contppc {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contppc h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contppc p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contweb {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contweb h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contweb p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .contmedia {
+    width: 100%;
+    left: 0;
+    top: auto;
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .contmedia h1 {
+    font-size: 2rem;
+    /* background-color: #0BF; */
+    position: absolute;
+    top:-23rem;
+  }
+
+  .contmedia p {
+    font-size: 1rem;
+    position: absolute;
+    top: -17rem;
+    text-align: center;
+    padding: 1rem;
+  }
 }

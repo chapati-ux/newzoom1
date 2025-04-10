@@ -745,12 +745,34 @@ height: 1.1875rem;
   color: #555;
   line-height: 1.6;
 }
+.step p:hover{
+  color: rebeccapurple;
+}
+.step h3:hover{
+  color: rebeccapurple;
+}
+.step span:hover{
+  color: rebeccapurple;
+}
+#sel {
+  width: 12rem;
+  height: 2rem;
+  background-color: white;
+  color: rgb(7, 7, 7);
+  display: block;
+}
 
 /* ============ Responsive for Mobile ============ */
 @media (max-width: 480px) {
   .services-section {
     padding: 1.875rem 1.25rem;
   }
+ .left-content h1  {
+   /* background-color: #242b2f; */
+   width:15rem;
+  margin-left: 7.5rem;
+ }
+ 
 
   .left-content,
   .right-content {
@@ -762,7 +784,7 @@ height: 1.1875rem;
   }
 
   .stats {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1.25rem;
   }
 
@@ -777,6 +799,7 @@ height: 1.1875rem;
   .marketing-section h2 {
     font-size: 1.5rem;
     text-align: center;
+    margin-top: -15REM;
   }
 
   .marketing-steps {
@@ -786,6 +809,8 @@ height: 1.1875rem;
 
   .step {
     width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
   }
 
   .step h3 {
@@ -795,6 +820,13 @@ height: 1.1875rem;
   .step p {
     font-size: 0.8125rem;
   }
+
+
+  
+    #sel {
+  display:block ;
+    }
+
 }
 .n1 a:hover {
   transform: translateY(-1rem);
@@ -835,8 +867,14 @@ height: 1.1875rem;
   border-top: none;
   display: flex;
   position: relative;
-}
+  transition: 0.5s all ease;
 
+}
+.marketing-steps .step h3:hover>.seo{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
 .seo,
 .sem,
 .market,
@@ -846,9 +884,8 @@ height: 1.1875rem;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
-.step :hover{
-  color: rebeccapurple;
-}
+
+
 .stage-1:hover .seo,
 .stage-1:hover .sem,
 .stage-1:hover .market,
@@ -857,6 +894,11 @@ height: 1.1875rem;
   opacity: 1;
   visibility: visible;
 }
+.stage-1:hover{
+  border-color:  #6040FF;
+  width:68rem ;
+  opacity: 1;
+}
 .icon {
   width: 1.375rem;
   height: 1.375rem;
@@ -864,6 +906,9 @@ height: 1.1875rem;
   flex-shrink: 0;
   background-color: white;
   /* margin-top: 4%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon img {
   object-fit: contain;
@@ -889,6 +934,10 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon2 img {
   object-fit: contain;
@@ -916,13 +965,16 @@ height: 1.1875rem;
   flex-shrink: 0;
   background-color: white;
   margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon3 img {
   object-fit: contain;
   margin-top: 10%;
 }
 .market {
-  width: 10.8125rem;
+  width: 12.8125rem;
   height: 1.625rem;
   flex-shrink: 0;
   border-radius: 0.8125rem;
@@ -943,6 +995,9 @@ height: 1.1875rem;
   background-color: white;
   /* margin-left:%; */
   /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon4 img {
   object-fit: contain;
@@ -969,6 +1024,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon5 img {
   object-fit: contain;
@@ -995,6 +1053,7 @@ height: 1.1875rem;
   flex-shrink: 0;
   border-top: none;
   position: relative;
+  transition: 0.5s all ease;
 }
 .event,
 .webinar,
@@ -1011,12 +1070,23 @@ height: 1.1875rem;
   opacity: 1;
   visibility: visible;
 }
+.stage-2:hover{
+  width: 54rem;
+  border-color:  #6040FF;
+  opacity: 1;
+  /* transition: opacity 1s ease-in-out, visibility 2s ease-in-out; */
+  /* transition-duration: 2s; */
+
+}
 .icon21 {
   width: 1.375rem;
   height: 1.375rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon21 img {
   object-fit: contain;
@@ -1042,6 +1112,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon22 img {
   object-fit: contain;
@@ -1060,6 +1133,9 @@ height: 1.1875rem;
   position: absolute;
   top: 5rem;
   left: 21rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon23 {
   width: 1.375rem;
@@ -1067,6 +1143,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon23 img {
   object-fit: contain;
@@ -1093,6 +1172,7 @@ height: 1.1875rem;
   flex-shrink: 0;
   border-top: none;
   position: relative;
+  transition: 0.5s all ease;
 }
 .UI,
 .design,
@@ -1112,12 +1192,23 @@ height: 1.1875rem;
   opacity: 1;
   visibility: visible;
 }
+.stage-3:hover{
+  width: 43rem;
+  border-color:  #6040FF;
+  opacity: 1;
+  /* transition: opacity 1s ease-in-out, visibility 2s ease-in-out; */
+  /* transition-duration: 2s; */
+}
+
 .icon31 {
   width: 1.375rem;
   height: 1.375rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon31 img {
   object-fit: contain;
@@ -1143,6 +1234,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon32 img {
   object-fit: contain;
@@ -1168,6 +1262,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon33 img {
   object-fit: contain;
@@ -1193,6 +1290,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon34 img {
   object-fit: contain;
@@ -1218,6 +1318,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon35 img {
   object-fit: contain;
@@ -1243,13 +1346,18 @@ height: 1.1875rem;
   flex-shrink: 0;
   border-top: none;
   position: relative;
+  transition: 0.5s all ease;
+
 }
 .icon41 {
   width: 1.375rem;
   height: 1.375rem;
   border-radius: 50%;
   flex-shrink: 0;
-  background-color: white;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon41 img {
   object-fit: contain;
@@ -1275,6 +1383,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon42 img {
   object-fit: contain;
@@ -1300,6 +1411,9 @@ height: 1.1875rem;
   border-radius: 50%;
   flex-shrink: 0;
   background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon43 img {
   object-fit: contain;
@@ -1327,8 +1441,26 @@ height: 1.1875rem;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
+.stage-4:hover .GH,
+.stage-4:hover .BP,
+.stage-4:hover .maintains {
+  opacity: 1;
+  visibility: visible;
+  /* color:  #6040FF; */
+}
+.stage-4:hover{
+  width: 31rem;
+  border-color: #6040FF;
+  opacity: 1;
+  /* transition: opacity 1s , visibility 2s ease-in-out; */
+}
+@media(max-width : 480px){
+  .funnel-container {
+    display: none;
+    }
+}
 
-.form-container {
+/* .form-container {
 
   display: flex;
   width: 32.5625rem;
@@ -1342,19 +1474,10 @@ height: 1.1875rem;
   border-radius: 1.16294rem;
 border: 1.24px solid #A6C1EE;
 background: linear-gradient(154deg, #8FCEFB -5.46%, #E2F2FE 71.37%, #FFF 97.91%);
-}
+} */
 
 /* Show them on hover */
-.stage-4:hover .GH,
-.stage-4:hover .BP,
-.stage-4:hover .maintains {
-  opacity: 1;
-  visibility: visible;
-  /* color:  #6040FF; */
-}
-/* . stage-4:hover {
-      color:  #6040FF;
-    } */
+
 
 .smart {
   height:58.3125rem ;
