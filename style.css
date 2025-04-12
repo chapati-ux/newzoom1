@@ -747,19 +747,21 @@ height: 1.1875rem;
 }
 .step p:hover{
   color: rebeccapurple;
-}
+}   
 .step h3:hover{
   color: rebeccapurple;
 }
 .step span:hover{
   color: rebeccapurple;
 }
+
+
 #sel {
   width: 12rem;
   height: 2rem;
   background-color: white;
   color: rgb(7, 7, 7);
-  display: block;
+  display: none;
 }
 
 /* ============ Responsive for Mobile ============ */
@@ -1454,6 +1456,37 @@ height: 1.1875rem;
   opacity: 1;
   /* transition: opacity 1s , visibility 2s ease-in-out; */
 }
+/* Hide funnel stages initially */
+.funnel-stage .oval > div {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+/* Show stage-1 items on hover of step-1 */
+.marketing-wrapper .step:nth-child(1):hover ~ .funnel-container .stage-1 > div {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Show stage-2 items on hover of step-2 */
+.marketing-wrapper .step:nth-child(2):hover ~ .funnel-container .stage-2 > div {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Show stage-3 items on hover of step-3 */
+.marketing-wrapper .step:nth-child(3):hover ~ .funnel-container .stage-3 > div {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Show stage-4 items on hover of step-4 */
+.marketing-wrapper .step:nth-child(4):hover ~ .funnel-container .stage-4 > div {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media(max-width : 480px){
   .funnel-container {
     display: none;
