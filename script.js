@@ -53,8 +53,43 @@ const changeText = () => {
   });
 };
 setInterval(changeText, 3000); // Change text every 2 seconds
-~
 
+// ^ nav //
+let t1 = gsap.timeline()
+// t1.from(".navimg",{
+//     y:-30,
+//     opacity:0,
+//    duration:0.5,
+//    delay:0.5
+// })
+
+// t1.from(".n1",{
+//     y:-30,
+//     opacity:0,
+//    duration:0.5,
+//     stagger:0.1,
+//     delay:0.2
+// })
+// t1.from(".client",{
+//     y:-30,
+//     opacity:0,
+//    duration:0.5,
+//     stagger:0.1,
+//     delay:0.2
+// })
+// t1.from(".btn",{
+//     y:-30,
+//     opacity:0,
+// //    duration:0.5,
+//     stagger:0.1,   
+//     // delay:0.2
+// })
+// t1.from("#htext",{
+//     y:30,
+//     opacity:0,
+//    duration:0.5,
+//     stagger:0.1
+// })
 gsap.to(".img2",{
     rotate:360,
     duration:8,
