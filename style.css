@@ -764,12 +764,14 @@ nav img {
 .step span:hover {
   color: rebeccapurple;
 }
+
+
 #sel {
   width: 12rem;
   height: 2rem;
   background-color: white;
   color: rgb(7, 7, 7);
-  display: block;
+  display: none;
 }
 
 /* ============ Responsive for Mobile ============ */
@@ -1456,7 +1458,7 @@ nav img {
   opacity: 1;
   /* transition: opacity 1s , visibility 2s ease-in-out; */
 }
-@media (max-width: 480px) {
+
   .funnel-container {
     display: none;
   }

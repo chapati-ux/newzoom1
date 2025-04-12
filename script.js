@@ -171,3 +171,15 @@ menu.addEventListener("click",function(){
 //     ease: "linear",
 //     repeat:-1,
 // })
+
+//   const step1 = document.getElementById('step-1');
+//   const stage1 = document.getElementById('stage-1');
+
+//   step1.addEventListener('mouseenter', () => {
+//     stage1.classList.add('hover');
+//   });
+
+//   step1.addEventListener('mouseleave', () => {
+//     stage1.classList.remove('hover');
+//   });
+// 
